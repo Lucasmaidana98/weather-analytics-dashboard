@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Cloud, Sun, CloudRain, CloudSnow, Wind, Droplets, Eye, Thermometer, Calendar, MapPin, TrendingUp, TrendingDown } from 'lucide-react';
+import { Cloud, Sun, CloudRain, CloudSnow, Wind, Droplets, Eye, Thermometer, Calendar, MapPin, TrendingUp } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
 import './App.css';
 
@@ -71,8 +70,6 @@ const WeatherIcon = ({ condition, size = 24 }) => {
 };
 
 function App() {
-  const [selectedMetric, setSelectedMetric] = useState('temperature');
-
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
